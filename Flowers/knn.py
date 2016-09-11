@@ -12,13 +12,10 @@ def normalize(base):
     for i in base:
         if i[4] == 'I. setosa':
             i[4] = 1
-            # count[0] += 1
         elif i[4] == 'I. virginica':
             i[4] = 2
-            # count[1] += 1
         elif i[4] == 'I. versicolor':
             i[4] = 3
-            # count[2] += 1
 
 
 # calcula distancia
@@ -84,6 +81,7 @@ def available(base):
     for i in range(0, 150):
         if i not in mark:
             no_mark.append(i)
+
 
 if __name__ == '__main__':
     result = [0, 0]
